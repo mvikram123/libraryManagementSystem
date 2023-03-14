@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Desktop.iml" filepath="$PROJECT_DIR$/.idea/Desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ecommerce/Ecommerce.iml" filepath="$PROJECT_DIR$/Ecommerce/Ecommerce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibraryManagementsystem/LibraryManagementsystem/LibraryManagementsystem.iml" filepath="$PROJECT_DIR$/LibraryManagementsystem/LibraryManagementsystem/LibraryManagementsystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject/allContest-spring-boot/month01/amazoff-viccky8578/demo (1) (com.driver).iml" filepath="$PROJECT_DIR$/myProject/allContest-spring-boot/month01/amazoff-viccky8578/demo (1) (com.driver).iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject/allContest-spring-boot/month01/emails-viccky8578/java-assignment-testing-solution.iml" filepath="$PROJECT_DIR$/myProject/allContest-spring-boot/month01/emails-viccky8578/java-assignment-testing-solution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myProject/allContest-spring-boot/month01/vehicles-viccky8578/java-assignment-testing-solution (1).iml" filepath="$PROJECT_DIR$/myProject/allContest-spring-boot/month01/vehicles-viccky8578/java-assignment-testing-solution (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-demo/jpa-demo/jpa-demo.iml" filepath="$PROJECT_DIR$/jpa-demo/jpa-demo/jpa-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snake ladder/snakeladder.iml" filepath="$PROJECT_DIR$/snake ladder/snakeladder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentManagementSystem/studentManagementSystem/studentManagementSystem.iml" filepath="$PROJECT_DIR$/studentManagementSystem/studentManagementSystem/studentManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worldDictionary/worldDictionary.iml" filepath="$PROJECT_DIR$/worldDictionary/worldDictionary.iml" />
+    </modules>
+  </component>
+</project>

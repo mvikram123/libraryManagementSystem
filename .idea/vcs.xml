@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LibraryManagementsystem/stopwatch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jpa-demo/jpa-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/myProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/studentManagementSystem" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/studentManagementSystem/studentManagementSystem" vcs="Git" />
+  </component>
+</project>

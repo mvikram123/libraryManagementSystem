@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-demo/jpa-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Ecommerce/pom.xml" />
+        <option value="$PROJECT_DIR$/myProject/allContest-spring-boot/month01/emails-viccky8578/pom.xml" />
+        <option value="$PROJECT_DIR$/myProject/allContest-spring-boot/month01/amazoff-viccky8578/pom.xml" />
+        <option value="$PROJECT_DIR$/myProject/allContest-spring-boot/month01/vehicles-viccky8578/pom.xml" />
+        <option value="$PROJECT_DIR$/snake ladder/pom.xml" />
+        <option value="$PROJECT_DIR$/worldDictionary/pom.xml" />
+        <option value="$PROJECT_DIR$/LibraryManagementsystem/LibraryManagementsystem/pom.xml" />
+        <option value="$PROJECT_DIR$/studentManagementSystem/studentManagementSystem/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
+</project>

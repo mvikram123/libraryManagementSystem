@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommerce.loginpagecontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="500.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Label layoutX="26.0" layoutY="27.0" prefHeight="27.0" prefWidth="134.0" text=" Log In Page :" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="76.0" />
+      <Label layoutX="13.0" layoutY="85.0" prefHeight="17.0" prefWidth="58.0" text="Email :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="12.0" layoutY="112.0" promptText="enter email id" />
+      <Label layoutX="20.0" layoutY="160.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="20.0" layoutY="190.0" promptText="enter password" />
+      <Button  layoutX="214.0" layoutY="200.0" mnemonicParsing="false" text="LogIn" onMouseClicked="#login"/>
+   </children>
+</AnchorPane>
