@@ -1,5 +1,7 @@
 package com.backendMarch.LibraryManagementsystem.Service;
 
+import com.backendMarch.LibraryManagementsystem.DTO.BookRequestDto;
+import com.backendMarch.LibraryManagementsystem.DTO.BookResponseDto;
 import com.backendMarch.LibraryManagementsystem.Entity.Author;
 import com.backendMarch.LibraryManagementsystem.Entity.Book;
 import com.backendMarch.LibraryManagementsystem.Repository.AuthorRepository;
@@ -16,17 +18,25 @@ public class BookService {
     BookRepository bookRepository;
     @Autowired
     AuthorRepository authorRepository;
-    public void addBook(Book book) throws Exception {
-        Author author;
-        try {
-            author=authorRepository.findById(book.getAuthor().getId()).get();
-        }
-        catch (Exception e)
-        {
-            throw new Exception("author is not available");
-        }
-        List<Book> bookswritten=author.getBookList();
-        bookswritten.add(book);
-        authorRepository.save(author);
+    public BookResponseDto addBook(BookRequestDto bookRequestDto) throws Exception {
+        //create object for author
+        Author author=authorRepository.findById(bookRequestDto.getAuthorId()).get();
+
+        //create object for book
+        Book book=new Book();
+        book.setTitle(bookRequestDto.getTitle());
+        book.setGenre(bookRequestDto.getGenre());
+        book.setPrice(bookRequestDto.getPrice());
+        book.setIssued(false);
+        book.setAuthor(author);
+        author.getBooks().add(book);
+        authorRepository.save(author);//will save book and author
+
+
+        BookResponseDto bookResponseDto=new BookResponseDto();
+        bookResponseDto.setTitle(book.getTitle());
+        bookResponseDto.setPrice(book.getPrice());
+        return bookResponseDto;
     }
+
 }

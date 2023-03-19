@@ -1,5 +1,7 @@
 package com.backendMarch.LibraryManagementsystem.Controller;
 
+import com.backendMarch.LibraryManagementsystem.DTO.BookRequestDto;
+import com.backendMarch.LibraryManagementsystem.DTO.BookResponseDto;
 import com.backendMarch.LibraryManagementsystem.Entity.Book;
 import com.backendMarch.LibraryManagementsystem.Service.AuthorService;
 import com.backendMarch.LibraryManagementsystem.Service.BookService;
@@ -19,15 +21,9 @@ public class BookController {
     @Autowired
     AuthorService authorService;
     @PostMapping("/add")
-    public String addBook(@RequestBody Book book) {
-        try {
-            bookService.addBook(book);
-        }
-        catch (Exception e)
-        {
-            throw new RuntimeException(e.getMessage()+"book is not added");
-        }
-        return "book is added successfully";
+    public BookResponseDto addBook(@RequestBody BookRequestDto bookRequestDto) throws Exception {
+
+       return bookService.addBook(bookRequestDto);
     }
 
 }

@@ -26,5 +26,5 @@ public class Author {
     @OneToMany(mappedBy = "author",cascade = CascadeType.ALL)
 
 
-     List<Book> bookList=new ArrayList<>();
+     List<Book> books=new ArrayList<>();
 }

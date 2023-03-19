@@ -1,5 +1,8 @@
 package com.backendMarch.LibraryManagementsystem.Controller;
 
+import com.backendMarch.LibraryManagementsystem.DTO.StudentRequestDto;
+import com.backendMarch.LibraryManagementsystem.DTO.StudentResponseDto;
+import com.backendMarch.LibraryManagementsystem.DTO.StudentUpdateMailRequestDto;
 import com.backendMarch.LibraryManagementsystem.Entity.Student;
 import com.backendMarch.LibraryManagementsystem.Service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +15,9 @@ public class StudentController {
     @Autowired
     StudentService studentService;
     @PostMapping("/add")
-    public String addStudent(@RequestBody Student student)
+    public String addStudent(@RequestBody StudentRequestDto studentRequestDto)
     {
-        studentService.addStudent(student);
+        studentService.addStudent(studentRequestDto);
         return "student is added";
     }
     @GetMapping("/find_by_mail")
@@ -29,6 +32,10 @@ public class StudentController {
   //  {
        // return
    // }
-
+    @PutMapping("/update_mail")
+    public StudentResponseDto  updateMail(@RequestBody StudentUpdateMailRequestDto studentUpdateMailRequestDto)
+    {
+        return studentService.updateMail(studentUpdateMailRequestDto);
+    }
 
 }
