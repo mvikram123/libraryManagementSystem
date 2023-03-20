@@ -12,10 +12,12 @@ import javax.persistence.Enumerated;
 @Getter
 @Setter
 public class BookRequestDto {
+
     private String title;
     private int price;
-   // @Enumerated
+
 
     private Genre genre;
     private int authorId;
+
 }

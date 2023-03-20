@@ -20,6 +20,7 @@ import java.sql.Date;
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String transactionNumber;
     @Enumerated(EnumType.STRING)
    TransactionStatus transactionStatus;

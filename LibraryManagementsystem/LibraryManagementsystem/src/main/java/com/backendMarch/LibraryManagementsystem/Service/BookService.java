@@ -25,8 +25,9 @@ public class BookService {
         //create object for book
         Book book=new Book();
         book.setTitle(bookRequestDto.getTitle());
-        book.setGenre(bookRequestDto.getGenre());
         book.setPrice(bookRequestDto.getPrice());
+        book.setGenre(bookRequestDto.getGenre());
+
         book.setIssued(false);
         book.setAuthor(author);
         author.getBooks().add(book);
